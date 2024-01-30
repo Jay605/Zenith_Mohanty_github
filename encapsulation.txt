@@ -1,0 +1,54 @@
+
+public class Encapsulation_concept {
+	
+	private int age=24;
+	private String student_location="Bhubaneswar, Odisha";
+	
+	
+	
+
+	public int getAge() {
+		return age;
+	}
+
+
+
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+
+
+
+	public String getStudent_location() {
+		return student_location;
+	}
+
+
+
+
+	public void setStudent_location(String student_location) {
+		this.student_location = student_location;
+	}
+
+
+
+}
+
+public class Encapsulation_runner {
+
+	public static void main(String[] args) {
+		
+		Encapsulation_concept obj=new Encapsulation_concept();
+		System.out.println("age:"+obj.getAge());
+		System.out.println("location:"+obj.getStudent_location());
+		obj.setAge(25);
+		obj.setStudent_location("Marthalli, Bangalore");
+		System.out.println("after modification age:"+obj.getAge());
+		System.out.println("after modification location:"+obj.getStudent_location());
+
+	}
+
+}
+
