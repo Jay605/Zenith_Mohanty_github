@@ -1,0 +1,98 @@
+//method overloading
+
+class Main{
+void sum(int a, int b){
+int sum=a+b;
+ return sum;
+}
+
+void sum(int a, int b, int c){
+int sum=a+b+c;
+ return sum;
+}
+
+
+public static void main(String args[]){
+  Main obj=new Main();
+  obj.sum(1,2);
+  obj.sum(3,4,5);
+
+}
+
+
+
+
+}
+
+OUTPUT- 3
+                12
+
+
+//method overiding
+
+class A{
+ void display_emp_details(){
+
+   String emp_name="Zenith";
+   String emp_sal="50000 Rupees";
+
+}
+
+
+}
+
+class B extends A{
+  
+void display_emp_details(){
+
+   String emp_name="Zenith";
+   String emp_sal="50000 Rupees";
+   int age=25;
+   String post="Engineer";
+
+}
+
+public static void main(String args[]){
+
+  B obj=new B();
+  obj.display_emp_details();
+}
+
+}
+
+// inheritance
+-> multiple inheritance- java can acheive multiple inheritance by using interface.
+-> interface can only have abstract methods inside it.
+interface demo1{
+
+void display_emp_details();
+
+}
+
+interface demo2{
+ void display_student_details();
+}
+
+
+class Main implements demo1,demo2{
+
+ @overide
+   void display_emp_details(){
+   System.out.println("employee details");
+
+}
+
+
+ @overide 
+   void display_student_details(){
+   System.out.println("student details");
+ }
+
+ public static void main(String args[]){
+  Main obj=new Main();
+  obj.display_emp_details();
+  obj.display_student_details();
+
+}
+
+}
